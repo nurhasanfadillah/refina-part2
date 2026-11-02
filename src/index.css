@@ -94,3 +94,27 @@
     width: 100% !important;
   }
 }
+
+/* REFina UI V2 — shared visual tokens and responsive application shell */
+:root {
+  color-scheme: dark;
+  --rf-canvas: #020617;
+  --rf-surface: #0f172a;
+  --rf-elevated: #1e293b;
+  --rf-border: #1e293b;
+  --rf-accent: #fbbf24;
+  --rf-text: #f1f5f9;
+  --rf-muted: #94a3b8;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--rf-canvas); }
+button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid var(--rf-accent); outline-offset: 2px; }
+#app-main-layout header nav { display: none !important; }
+@media (max-width: 1023px) {
+  #app-main-layout { padding-bottom: env(safe-area-inset-bottom); }
+  #app-main-layout main { padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
+}
+@media (min-width: 1024px) {
+  #app-main-layout main { padding-bottom: 1.5rem; }
+}
