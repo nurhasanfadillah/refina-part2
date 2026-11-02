@@ -1,0 +1,8 @@
+{
+  "name": "REDONE FINANCE - part 2",
+  "description": "Aplikasi manajemen keuangan perusahaan berbasis aliran nominal dengan pencatatan transaksi single-entry, otomatisasi mutasi akun, persediaan nominal, kas \u0026 piutang, opname, dan laporan keuangan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
